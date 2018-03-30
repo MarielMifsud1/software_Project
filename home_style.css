@@ -1,0 +1,21 @@
+.nav-link{
+    color: black;
+}
+#main{
+    margin-left: -1%;
+   
+}
+
+
+#main2, #jumbo1{
+    background-color: lightgrey;
+    border: 1px solid #a69042;
+}
+#jumboTitle, #jumboText
+{
+    text-align: center;
+}
+#jumboLine1
+{
+    background-color:#a69042;
+}
