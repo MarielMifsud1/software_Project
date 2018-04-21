@@ -14,8 +14,21 @@
 #jumboTitle, #jumboText
 {
     text-align: center;
+   
 }
-#jumboLine1
+#jumboText2{
+    display: inline-block;
+    width: 37%;
+    margin-left: 33%;
+    border: 1px solid #a69042;
+}
+#jumboLine1,#jumboLine3
 {
     background-color:#a69042;
+}
+#manImg
+{
+    margin-left: 45%;
+    border: 1px solid #a69042;
+    
 }
