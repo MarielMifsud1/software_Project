@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="runtime/bootstrap.min.css">
     <script src="runtime/jquery-3.2.1.min.js"></script>
     <script src="runtime/popper.min.js"></script>
     <script src="runtime/bootstrap.min.js"></script>
-    <link type="text/css"  rel="stylesheet" href="home_style.css">
-    <title>About US</title>
+    <link rel="stylesheet" type="text/css" href="home_style.css">
+    <title>Plan Event</title>
 </head>
 <body>
    
@@ -39,8 +39,8 @@
           <strong><a class="nav-link" href="./bookPhotoshoot.html">Book Photoshoot</a></strong> 
         </li>
          <li class="nav-item">
-          <strong><a class="nav-link" href="#">Products</a></strong> 
-         </li>
+                  <strong><a class="nav-link" href="#">Products</a></strong> 
+                </li>
          <li class="nav-item">
           <strong><a class="nav-link" href="#">Contact</a></strong> 
         </li>
@@ -66,16 +66,47 @@
       </div>
 </nav>
    
-   <div class="jumbotron" id="jumbo3" width="100%">
-      <h1 id="jumboTitle" >About me!</h1>
-      <hr class="my-4" id="jumboLine3">
-      <img id="manImg"src="man.jpg" height="474px" width="262px">
-      <br><br>
-      <p class="lead" id="jumboText2">Inspiration to photography came from my inspiring brother. From there
-      started my journey by buying my first camera took a course in basic photography. Feel so in love with the art that decided to continue my studies in Mcast and got my degree. Proud to capture my clients memoarable moments.</p>
-
+   <div class="jumbotron" id="jumboTitle">
+          <h1 id="jumboTitle" >Plan your memories!</h1>
+          <hr class="my-4" id="jumboLine1">
     </div>
-  
     
+     <div class="col-lg-4" id="form2">
+       
+        <form>
+        <div class="form-group">
+            
+            First Name:
+            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="First Name" id="txtName2">
+            <br>
+            Surname:
+            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Surname" id="txtSurname2">
+            <br>
+             Email:
+            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Email" id="txtEmail">
+            <br>
+            Event type:
+            <select id= "options" class="form-control form-control-sm" style="margin-top:1%">
+                <option>...</option>
+                <option id="wed" > Wedding</option>
+                <option> Baptisim</option>
+                <option> Holy communion</option>
+                <option> Maternity</option>
+                
+                
+            </select>
+            
+            <br>
+            <br>
+            <a  href="gallery.html"></a>
+         
+            
+        </div>
+        
+    </form>
+    </div>
+    
+    <button type="button" id="btnNext" onclick="wedding()" >Next</button>
+    <script src="eventScript.js"></script>
 </body>
 </html>

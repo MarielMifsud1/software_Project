@@ -7,23 +7,12 @@
     <script src="runtime/jquery-3.2.1.min.js"></script>
     <script src="runtime/popper.min.js"></script>
     <script src="runtime/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./home_style.css">
-
-
-    <title>Home page</title>
-  
-    </head>
+    <link rel="stylesheet" type="text/css" href="home_style.css">
+    <title>Book Photoshoot</title>
+</head>
 <body>
- <p hidden >  
- <audio controls autoplay>
-  <source src="./Nice%20intro%20music.mp3" type="audio/ogg">
-  Your browser does not support the audio element.
- </audio>
-  </p>
-  
-
    
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
   
    <img src="./project_logo.png" width="100" height="80" class="d-inline-block align-middle" alt="">
    <div class="container">
@@ -54,7 +43,7 @@
                  <li class="nav-item">
                   <strong><a class="nav-link" href="./bookPhotoshoot.html">Book Photoshoot</a></strong> 
                 </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                   <strong><a class="nav-link" href="#">Products</a></strong> 
                 </li>
                  <li class="nav-item">
@@ -82,22 +71,63 @@
           
       </div>
 </nav>
-    
-  <div class="container-fluid" id="main2">
-  <img id="main" src="main.jpg" width="110%" height="10%">
-   </div>
    
-   <div class="jumbotron" id="jumbo1">
-      <h1 id="jumboTitle" >Welcome to Capture it!</h1>
+     <div class="jumbotron" id="jumbo1">
+      <h1 id="jumboTitle" >Book your photoshoot today!</h1>
       <hr class="my-4" id="jumboLine1">
-      <p class="lead" id="jumboText">Sincerly hope that each and every user entering our website will find exactly
-       he/she is looking for.</p>
-
-
     </div>
     
-
- 
+    <br><br>
+  
+    <div class="col-lg-4" id="form1">
+       
+        <form>
+        <div class="form-group">
+            
+            First Name:
+            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="First Name" id="txtName">
+            <br>
+            Surname:
+            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Surname" id="txtSurname">
+            <br>
+            Email:
+            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Email" id="txtEmail">
+            <br>
+            Event type:
+            <select class="form-control form-control-sm" style="margin-top:1%">
+                <option>...</option>
+                <option> Group photoshoot</option>
+                <option> Single photoshoot</option>
+                <option> Couple photoshoot</option>
+                
+            </select>
+            <br>
+            Number of people:
+            <select class="form-control form-control-sm" style="margin-top:1%">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                
+            </select>
+            <br>
+            Location:
+            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Location" id="location">
+            <br>
+            Date and Time:
+            <br>
+            <input type="datetime-local" name="date&time" id="dateTime">
+            
+        </div>
+        
+    </form>
+    </div>
+    
+    <input type="submit" value="submit" id="btnSubmit">
+    
+    
     
 </body>
 </html>
