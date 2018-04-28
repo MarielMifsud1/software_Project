@@ -94,7 +94,7 @@
             <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Email" id="txtEmail">
             <br>
             Event type:
-            <select class="form-control form-control-sm" style="margin-top:1%">
+            <select class="form-control form-control-sm" style="margin-top:1% " id="options">
                 <option>...</option>
                 <option> Group photoshoot</option>
                 <option> Single photoshoot</option>
@@ -103,7 +103,8 @@
             </select>
             <br>
             Number of people:
-            <select class="form-control form-control-sm" style="margin-top:1%">
+            <select class="form-control form-control-sm" style="margin-top:1%" id="options2">
+                <option>....</option>
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -116,18 +117,22 @@
             Location:
             <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Location" id="location">
             <br>
-            Date and Time:
+            Date:
             <br>
-            <input type="datetime-local" name="date&time" id="dateTime">
+            <input type="date" name="date" id="date">
+            <br><br>
+            Time:
+            <br>
+            <input type="time" name="time" id="time">
             
         </div>
         
     </form>
     </div>
     
-    <input type="submit" value="submit" id="btnSubmit">
+    <input type="submit" value="submit" id="btnSubmit" onclick="valid()">
     
     
-    
+    <script src="bookPhoto.js"></script>
 </body>
 </html>

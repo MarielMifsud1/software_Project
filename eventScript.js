@@ -8,3 +8,23 @@ function wedding()
            window.location.assign("./gallery.html");
     }
 }
+
+function validation()
+{
+    
+    var Fname =  document.getElementById("txtName2").value;
+    var Surname = document.getElementById("txtSurname2").value;
+    var email = document.getElementById("txtEmail").value;
+    var choice = document.getElementById("options").value;
+    
+    if(Fname == "" || Surname == "" || email == "" || choice == "...")
+        {
+            alert("Some fields where empty");
+        }
+    
+    else
+        {
+            wedding();
+        }
+    
+}
