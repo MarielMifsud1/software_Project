@@ -8,11 +8,11 @@
     <script src="runtime/popper.min.js"></script>
     <script src="runtime/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="home_style.css">
-    <title>Plan Event</title>
+    <title>Baptism Event</title>
 </head>
 <body>
    
-   <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
   
    <img src="./project_logo.png" width="100" height="80" class="d-inline-block align-middle" alt="">
    <div class="container">
@@ -66,47 +66,27 @@
       </div>
 </nav>
    
-   <div class="jumbotron" id="jumboTitle">
-          <h1 id="jumboTitle" >Plan your memories!</h1>
-          <hr class="my-4" id="jumboLine1">
-    </div>
-    
-     <div class="col-lg-4" id="form2">
+   <div class="col-lg-4" id="form2">
        
         <form>
         <div class="form-group">
-            
+            <br>
             First Name:
             <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="First Name" id="txtName2">
             <br>
             Surname:
             <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Surname" id="txtSurname2">
             <br>
-             Email:
+            Email:
             <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Email" id="txtEmail">
             <br>
-            Event type:
-            <select id= "options" class="form-control form-control-sm" style="margin-top:1%">
-                <option>...</option>
-                <option id="wed" > Wedding</option>
-                <option id="bapt"> Baptisim</option>
-                <option id="holy"> Holy communion</option>
-                <option id="maternity"> Maternity</option>
-                
-               
-            </select>
-            
-            <br>
-            <br>
-            <a  href="gallery.html"></a>
-         
+            Location of church:
+            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Location of church" id="Lchurch">
             
         </div>
-        
-    </form>
+       </form>
     </div>
     
-    <button type="button" id="btnNext" onclick="validation()" >Next</button>
-    <script src="eventScript.js"></script>
+     <input type="submit" value="submit" id="btnSubmit">
 </body>
 </html>
