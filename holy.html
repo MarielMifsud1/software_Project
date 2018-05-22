@@ -42,7 +42,7 @@
                   <strong><a class="nav-link" href="#">Products</a></strong> 
                 </li>
          <li class="nav-item">
-          <strong><a class="nav-link" href="#">Contact</a></strong> 
+          <strong><a class="nav-link" href="./contact.html">Contact</a></strong> 
         </li>
    
       </ul>
@@ -82,11 +82,20 @@
             <br>
             Location of church:
             <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Location of church" id="Lchurch">
+             <br>
+            Date:
+            <br>
+            <input type="date" name="date" id="date">
+            <br><br>
+            Time:
+            <br>
+            <input type="time" name="time" id="time">
             
         </div>
        </form>
     </div>
     
-     <input type="submit" value="submit" id="btnSubmit">
+     <input type="submit" value="submit" id="btnSubmit" onclick="validation3()">
+     <script src="./eventScript.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+#camera1
+{
+     margin-left: 4%;
+    border: 1px solid #a69042;
+   
+}
+
+#text
+{
+     border: 1px solid #a69042;
+}
+
+#quantity
+{
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+

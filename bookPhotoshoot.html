@@ -47,7 +47,7 @@
                   <strong><a class="nav-link" href="#">Products</a></strong> 
                 </li>
                  <li class="nav-item">
-                  <strong><a class="nav-link" href="#">Contact</a></strong> 
+                  <strong><a class="nav-link" href="./contact.html">Contact</a></strong> 
                 </li>
 
               </ul>
@@ -58,7 +58,7 @@
       <div id="signUp" class="col-sm-3">
           <ul class="nav justify-content-end">
               <li class="nav-item">
-              <strong><a class="nav-link" href="#">Sign Up</a></strong>
+              <strong><a class="nav-link" href="./signUp.html">Sign Up</a></strong>
               </li>
               
               <li class="nav-item">
@@ -81,7 +81,7 @@
   
     <div class="col-lg-4" id="form1">
        
-        <form>
+        <form action="C:\xampp\htdocs/bookPhoto.php" method="post">
         <div class="form-group">
             
             First Name:
@@ -90,27 +90,30 @@
             Surname:
             <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Surname" id="txtSurname">
             <br>
+             Username:
+            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Username" id="txtUsername">
+            <br>
             Email:
             <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Email" id="txtEmail">
             <br>
             Event type:
             <select class="form-control form-control-sm" style="margin-top:1% " id="options">
                 <option>...</option>
-                <option> Group photoshoot</option>
-                <option> Single photoshoot</option>
-                <option> Couple photoshoot</option>
+                <option id="options"> Group photoshoot</option>
+                <option id="options"> Single photoshoot</option>
+                <option id="options"> Couple photoshoot</option>
                 
             </select>
             <br>
             Number of people:
             <select class="form-control form-control-sm" style="margin-top:1%" id="options2">
                 <option>....</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
+                <option id="options2">1</option>
+                <option id="options2">2</option>
+                <option id="options2">3</option>
+                <option id="options2">4</option>
+                <option id="options2">5</option>
+                <option id="options2">6</option>
                 
             </select>
             <br>
@@ -124,14 +127,15 @@
             Time:
             <br>
             <input type="time" name="time" id="time">
-            
+           
         </div>
-        
+         <button type="submit" class="signupbtn" name="submit">Sign Up</button>
     </form>
+   
     </div>
     
-    <input type="submit" value="submit" id="btnSubmit" onclick="valid()">
-    
+  
+   
     
     <script src="bookPhoto.js"></script>
 </body>
