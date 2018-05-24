@@ -79,7 +79,7 @@
            
                 ?>
                   <li class="nav-item">
-                  <strong><a class="nav-link" href="./logIn.php">Log out</a></strong>
+                  <strong><a class="nav-link" href="./home.php">Log out</a></strong>
                   </li>
               <?php
                     }

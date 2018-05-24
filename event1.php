@@ -5,23 +5,33 @@
         
         $email = $_POST['txtEmail'];
         $event = $_POST['options'];
-        $user = $_POST['txtUser']
+        $user = $_POST['txtUser'];
+         $date = $_POST['date'];
+         $time = $_POST['time'];
+         $location = $_POST['location'];
         
         $photo = '2';
             
-        $conn = mysqli_connect("localhost","root","","captureit","3306") or die("Cannot connect to database");
+        $conn = mysqli_connect("localhost","root","","captureit") or die("Cannot connect to database");
         
-        echo "$email"."$event"."$user"."$book"."$photo"
+        echo "$email"."$event"."$user"."$date"."$time"."$photo";
         
-        if($event == "Wedding")
-        {
-            $query = "insert into events ( eventType, Usernane, photographer_Id)
-                        values( '$event','$user','$photo')";
-        }
         
-    
         
+             $query = "insert into events (eventType,Address, Date, Time, Usernane, photographer_Id)
+                        values('$event','$location','$date','$time','$user','$photo')";
+        
+            if(mysqli_query($conn, $query)) { 
+                mysqli_affected_rows($conn);  
+            ?>
+               
+              <script> alert("Your event is booked see you there :)")</script>
+               
+               
+               <?php
+               
+            }
+                echo "Error: ".mysqli_error($conn);
     }
-
 
 ?>

@@ -153,7 +153,7 @@
  
         </div>
         
-         <button type="submit" class="signupbtn" name="submit" onclick="valid()">Sign Up</button>
+         <button type="submit" class="signupbtn" name="submit" id="sub"onclick="valid()">Sign Up</button>
          
 
     </form>

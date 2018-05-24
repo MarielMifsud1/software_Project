@@ -101,14 +101,17 @@
         <form method="POST" action="./event1.php">
         <div class="form-group">
             <br>
+             Username:
+            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Surname" id="txtSurname2" name="txtUser">
+            <br>
              Bride Name and Surname:
             <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Name and Surname" id="BrideName">
             <br>
             Groom Name and Surname:
-            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Name and Surname" id="GroomName">
+            <input style="margin-top:1%;" type="text" class="form-control" size="35" placeholder="Name and Surname" id="GroomName" name="txtUser">
             <br>
             Email:
-            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Email" id="txtEmail">
+            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Email" id="txtEmail" name="txtEmail">
             <br>
             Bride Address:
             <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Bride Address" id="BAddress">
@@ -117,20 +120,40 @@
             <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Groom Address" id="GAddress">
             <br>
             Location of church:
-            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Location of church" id="Lchurch">
+            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Location of church" id="Lchurch" name="location">
             <br>
             Location of Wedding hall:
-            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Location of wedding hall" id="Lhall">
+            <input style="margin-top:1%;" type="text" class="form-control" size="100" placeholder="Location of wedding hall" id="Lhall"  >
             <br>
             Where to start shooting:
-             <select class="form-control form-control-sm" style="margin-top:1%" id="options3">
+             <select class="form-control form-control-sm" style="margin-top:1%" id="options3" >
                 <option>....</option>
                 <option>Groom</option>
                 <option>Bride</option>
                 
             </select>
             <br>
-            <input type="submit" value="submit" id="btnSubmit" onclick = "validation4()">
+            
+            Event type:
+            <select id= "options" class="form-control form-control-sm" style="margin-top:1%" name="options">
+                <option>...</option>
+                <option id="wed" name="options"> Wedding</option>
+                <option id="bapt" name="options"> Baptisim</option>
+                <option id="holy" name="options"> Holy communion</option>
+                <option id="maternity" name="options"> Maternity</option>
+                
+               
+            </select>
+            <br>
+             Date:
+            <br>
+            <input type="date" name="date" required>
+            <br><br>
+            Time:
+            <br>
+            <input type="time" name="time" required>
+            <br>
+            <input type="submit" value="submit" id="btnSubmit" name="submit" onclick = "validation4()">
             <script src="./eventScript.js"></script>
             
             </div>

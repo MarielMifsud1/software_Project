@@ -1,5 +1,6 @@
 function valid()
 {
+    
     var value1 = document.getElementById("txtName").value;
     var value2 = document.getElementById("txtSurname").value;
     var value3 = document.getElementById("txtEmail").value;
@@ -14,4 +15,12 @@ function valid()
             alert("Some fields where empty");
         }
 }
+
+function text()
+{
+    alert("Your photoshoot is booked we will see you then :)");
+}
+
+var el = document.getElementById("sub");
+el.addEventListener("click",text);
 

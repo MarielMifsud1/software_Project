@@ -32,7 +32,7 @@
             else
                 
             {
-                header('Location: signUp1.php');
+                header('Location: home.php');
             }
             
     

@@ -129,7 +129,7 @@
     </form>
     </div>
     
-    <button type="button" id="btnNext" onclick="validation()" name="submit">Next</button>
+    <button type="button" id="btnNext" onclick="validation()" name="next">Next</button>
     <script src="eventScript.js"></script>
 </body>
 </html>

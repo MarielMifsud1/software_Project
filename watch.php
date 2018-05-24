@@ -14,7 +14,7 @@
      <link rel="stylesheet" type="text/css" href="./products.css">
     <link rel="stylesheet" type="text/css" href="home_style.css">
    
-    <title>Products</title>
+    <title>watch list</title>
 </head>
 <body>
     
